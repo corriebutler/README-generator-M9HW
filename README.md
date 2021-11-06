@@ -9,7 +9,7 @@ A simple program that allows the user to answer quick questions and afterwards i
 This will help users who are unfamiliar with markup language still generate a comprehensive README file without worrying about the formatting not coming over. 
 
 ## Link to Site
-https://lholgate.github.io/moon-phase/
+https://corriebutler.github.io/README-generator-M9HW/
 
 ## Coding Scripts
 Node.js
