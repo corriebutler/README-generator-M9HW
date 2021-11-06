@@ -8,13 +8,14 @@ A simple program that allows the user to answer quick questions and afterwards i
 ## What problems will the app solve?
 This will help users who are unfamiliar with markup language still generate a comprehensive README file without worrying about the formatting not coming over. 
 
-## Link to Site
-https://corriebutler.github.io/README-generator-M9HW/
+## Link to Video Walkthrough
+
 
 ## Coding Scripts
 Node.js
 
 ## Resources
+[How to create a Professional README](./readme-guide.md)
 
 
 ## Contact
