@@ -7,6 +7,11 @@ const questions = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
+fs.writeFile('README.md',dataPlaceHolder), err => {
+    if(err) throw err;
+
+    console.log('README was now generated. Checkout README.md to the see output!');
+};
 
 // TODO: Create a function to initialize app
 function init() {}
