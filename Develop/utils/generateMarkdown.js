@@ -14,6 +14,24 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.projectTitle}
 
+  ## Table of Contents
+  - [Description of Project](#projectDescription)
+  - [Visuals](#projectVisuals)
+  - [Project Usage](#projectUsage)
+  - [Contributing to this Project](#projectContribution)
+  - [How to Install](#projectInstallation)
+  - [Tests](#projectTests)
+  - [GitHub Repo](#githubUser)
+  - [Questions](#projectQuestions)
+
+  ## Description of Project
+  ${data.projectDescription}
+
+  ## Visuals
+  *Add Visuals Here*
+
+  
+
 `;
 }
 

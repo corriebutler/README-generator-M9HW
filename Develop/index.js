@@ -31,6 +31,12 @@ const questions = [
         }
     },
     {
+        type: 'checkbox',
+        name: 'projectScripts',
+        message: 'What languages did you use to build your project?',
+        choices: ['HTML', 'CSS', 'Bootstrap','JavaScript','JQUERY','ES6','Node','Other']
+    },
+    {
         type: 'list',
         name: 'projectLicense',
         message: 'What license type would you like to assign to this project?',
@@ -58,6 +64,11 @@ const questions = [
         type: 'input',
         name: 'projectInstallation',
         message: 'What are the steps to install your project?',
+    },
+    {
+        type: 'input',
+        name: 'projectTest',
+        message: 'What tests were included in this project?',
     },
     {
         type: 'input',
