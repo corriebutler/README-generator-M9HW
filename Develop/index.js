@@ -90,12 +90,12 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     // Generate the actual README file that pulls data
-    // fs.writeFile(fileName, data, err => {
-    //         if(err) {
-    //             console.log(err);;
-    //         };
-    //         console.log('README was now generated. Checkout README.md to the see output!');
-    //     });
+    fs.writeFile(fileName, data, err => {
+            if(err) {
+                console.log(err);;
+            };
+            console.log('README was now generated. Checkout README.md to the see output!');
+        });
 }
 
 
@@ -105,7 +105,7 @@ function init() {
     inquirer.prompt(questions)
         .then (answers => console.log(answers))
         .then (answers => {
-            writeToFile('../dist/README.md', data, err => {
+            writeToFile('../dist/README.md', answers, err => {
                 if (err) {
                     console.log(err);
                 }
