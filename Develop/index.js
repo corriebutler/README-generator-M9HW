@@ -38,7 +38,7 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'projectLicense',
+        name: 'license',
         message: 'What license type would you like to assign to this project?',
         choices: ['Apache 2.0', 'GPLv2','GLPv3','MIT','None'],        
         validate: licenseInput => {
