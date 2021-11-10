@@ -88,16 +88,19 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    // Generate the actual README file that pulls data
+    fs.writeFile(fileName,data, err => {
+            if(err) {
+                console.log(err);;
+            };
+            console.log('README was now generated. Checkout README.md to the see output!');
+        });
+}
 
-// Generate the actual README file that pulls data
-// fs.writeFile('README.md',dataPlaceHolder), err => {
-    //     if(err) throw err;
+
     
-    //     console.log('README was now generated. Checkout README.md to the see output!');
-    // };
-    
-    // TODO: Create a function to initialize app
+// TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then(answers => console.log(answers))
