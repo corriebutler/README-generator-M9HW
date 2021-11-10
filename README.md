@@ -21,13 +21,9 @@ Node.js
 
 ## Resources
 [How to create a Professional README](./readme-guide.md)
-
+License Usage on Github - https://github.blog/2015-03-09-open-source-license-usage-on-github-com/
+Markdown Guide: https://www.markdownguide.org/cheat-sheet/
+License Badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 
 ## Contact
 Corrie Butler - corriebutler12@gmail.com
-
-## Testing badge for licenses
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
