@@ -23,7 +23,7 @@ Node.js
 - [How to create a Professional README](./readme-guide.md)
 - License Usage on Github - https://github.blog/2015-03-09-open-source-license-usage-on-github-com/
 - Markdown Guide: https://www.markdownguide.org/cheat-sheet/
-- License Badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+- License Badges and Links: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 
 ## Contact
 Corrie Butler - corriebutler12@gmail.com
