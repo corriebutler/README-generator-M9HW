@@ -17,8 +17,9 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Description of Project](#projectDescription)
   - [Visuals](#projectVisuals)
+  - [Programming Languages Used](#projectScripts)
   - [Project Usage](#projectUsage)
-  - [Contributing to this Project](#projectContribution)
+  - [How can you contribute?](#projectContribution)
   - [How to Install](#projectInstallation)
   - [Tests](#projectTests)
   - [GitHub Repo](#githubUser)
@@ -30,8 +31,26 @@ function generateMarkdown(data) {
   ## Visuals
   *Add Visuals Here*
 
-  
+  ## Languages Used
+  ${data.projectScripts}
 
+  ## Project Usage
+  ${data.projectUsage}
+
+  ## How can you Contribute?
+  ${data.projectContribution}
+
+  ## How to Install
+  ${data.projectInstallation}
+
+  ## Tests
+  ${data.projectTests}
+
+  ## GitHub Repo
+  (https://github.com/${data.githubUser})
+
+  ## Questions
+  [Contact User](mailto:${data.projectQuestions})
 `;
 }
 
