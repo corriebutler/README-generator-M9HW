@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -73,28 +74,12 @@ const questions = [
     {
         type: 'input',
         name: 'githubUser',
-        message: 'What is your GitHub username? (Required):',
-        validate: githubInput => {
-            if (githubInput) {
-                console.log(`Please enter your Github Username!`);
-                return true;
-            } else {
-                return false;
-            }
-        }
+        message: 'What is your GitHub username?:',
     },
     {
         type: 'input',
         name: 'projectQuestions',
-        message: 'What is your best email for contact on this project? (Required):',
-        validate: questionsInput => {
-            if (questionsInput) {
-                console.log(`Please enter a valid email address!`);
-                return true;
-            } else {
-                return false;
-            }
-        }
+        message: 'What is your best email for contact on this project?:',
     },
 ];
 
