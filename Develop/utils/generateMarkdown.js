@@ -3,34 +3,54 @@
 function renderLicenseBadge(license) {
   let badge = '';
   if (license === 'Apache 2.0'){
-    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
   }
   if (license === 'GPLv2'){
-    badge = '![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
+    badge = '![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]'
   }
   if (license === 'GPLv3'){
-    badge = '![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0'
+    badge = '![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)]'
   }
   if (license === 'MIT'){
-    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
   }
-}
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseLink = '';
+  if (license === 'Apache 2.0'){
+    licenseLink = '(https://opensource.org/licenses/Apache-2.0)'
+  }
+  if (license === 'GPLv2'){
+    licenseLink = '(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
+  }
+  if (license === 'GPLv3'){
+    licenseLink = '(https://www.gnu.org/licenses/agpl-3.0)'
+  }
+  if (license === 'MIT'){
+    licenseLink = '(https://opensource.org/licenses/MIT)'
+  }
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license != 'None') {
+    return `## License`
+  } else {
+    return ``
+  }
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.projectTitle}
 
+  ${renderLicenseSection(data.license)}
   ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
-  ${renderLicenseSection(data.license)}
 
   This project uses 
   ## Table of Contents
