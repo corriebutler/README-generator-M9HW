@@ -21,15 +21,7 @@ const questions = [
     {
         type: 'input',
         name: 'projectDescription',
-        message: 'Give a description of your project (Required):',
-        validate: descriptionInput => {
-            if (descriptionInput) {
-                console.log(`Please enter a valid project description!`);
-                return true;
-            } else {
-                return false;
-            }
-        }
+        message: 'Give a description of your project:',
     },
     {
         type: 'checkbox',
@@ -99,9 +91,9 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-        .then (answers => console.log(answers))
-        .then (answers => {
-            writeToFile('../dist/README.md', answers, err => {
+        .then (answers => generateMarkdown(answers))
+        .then (markdownData => {
+            writeToFile('../dist/README.md', markdownData, err => {
                 if (err) {
                     console.log(err);
                 }

@@ -1,36 +1,34 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let badge = '';
-  if (license === 'Apache 2.0'){
-    badge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]'
-  }
-  if (license === 'GPLv2'){
-    badge = '![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]'
-  }
-  if (license === 'GPLv3'){
-    badge = '![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)]'
-  }
-  if (license === 'MIT'){
-    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
+  switch(license) {
+    case 'Apache 2.0':
+      return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`
+    case 'GPLv2':
+      return `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]`
+    case 'GLPv3':
+      return `![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)]`
+    case 'MIT':
+      return badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+    default:
+      return ``
   }
 };
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseLink = '';
-  if (license === 'Apache 2.0'){
-    licenseLink = '(https://opensource.org/licenses/Apache-2.0)'
-  }
-  if (license === 'GPLv2'){
-    licenseLink = '(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
-  }
-  if (license === 'GPLv3'){
-    licenseLink = '(https://www.gnu.org/licenses/agpl-3.0)'
-  }
-  if (license === 'MIT'){
-    licenseLink = '(https://opensource.org/licenses/MIT)'
+  switch(license) {
+    case 'Apache 2.0':
+      return `(https://opensource.org/licenses/Apache-2.0)`
+    case 'GPLv2':
+      return `(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`
+    case 'GLPv3':
+      return `(https://www.gnu.org/licenses/agpl-3.0)`
+    case 'MIT':
+      return badge = `(https://opensource.org/licenses/MIT)`
+    default:
+      return ``
   }
 };
 
